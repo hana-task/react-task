@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+}
+
+.CartIcon::before {
+    content: url('./images/cap.png');
+    width: 10px;
+    height: 10px;
+}
+
+.CartIcon {
+    width: 10px;
+}

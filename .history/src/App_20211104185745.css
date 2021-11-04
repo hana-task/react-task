@@ -1,0 +1,120 @@
+.CartIcon {
+    background: url('./images/cart.png');
+    max-width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.CartIcon span {
+    position: absolute;
+    left: 32px;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 22px;
+    font-size: 13px;
+    height: 24px;
+    font-weight: bold;
+}
+
+.inner-prod {
+    border: 1px solid #E8E9EB;
+    border-radius: 8px;
+    margin-bottom: 44px;
+    background: #ffff;
+}
+
+.prod img {
+    max-height: 125px;
+}
+
+.prod .wrap-img {
+    background: #E8E9EB;
+    text-align: center;
+}
+
+.prod h3 {
+    font-size: 20px;
+    padding-top: 8px;
+    color: #323130;
+    align-self: center;
+}
+
+.prod .desc {
+    font-size: 12px;
+}
+
+.prod .price {
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.prod .wrap-input label {
+    margin-right: 10px;
+}
+
+.prod input#quantity {
+    border: 1px solid #9fa3aa;
+    color: #7a8089;
+    max-width: 45px;
+}
+
+.prod input[type="submit"] {
+    margin-top: 20px;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #CB11AD;
+    color: #fff;
+    border: 1px solid #fff;
+    border: 1pxsolid #4E92E8;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.prod input[type="submit"]:hover {
+    background: #d643bd;
+}
+
+.prod .wrap-content {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #CB11AD;
+}
+
+.closeCart:after {
+    content: url('./images/x-dark.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#Cart {
+    position: fixed;
+    z-index: 9999;
+    top: 37px;
+    left: 43px;
+    background-color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 7px;
+    padding-left: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 #0000004d;
+    width: 360px;
+    transition: all .35s;
+    opacity: 1;
+    visibility: visible;
+    outline: 0;
+}
+
+#Cart img {
+    max-height: 90px;
+}

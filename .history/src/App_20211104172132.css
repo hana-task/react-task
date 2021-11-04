@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+}
+
+.CartIcon::before {
+    content: url('https://image.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg');
+    width: 10px;
+    height: 10px;
+}

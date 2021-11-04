@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+}
+
+.CartIcon::before {
+    content: url('https://png.pngtree.com/element_our/20200702/ourmid/pngtree-cart-shopping-cart-icon-png-free-illustration-image_2284387.jpg');
+    width: 10px;
+    height: 10px;
+}

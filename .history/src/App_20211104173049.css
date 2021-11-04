@@ -1,0 +1,19 @@
+.App {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+}
+
+.CartIcon::before {
+    content: url('./images/cart.png');
+    font-size: 10px;
+    max-width: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.CartIcon {
+    max-width: 10px;
+}
