@@ -1,13 +1,17 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Cart from "./Cart";
 import ProductsJson  from "./Data.json";
 
 
 export default function Shop() {
    
-        const [cartItems, setCartItems] = useState([]);
-        const [showCart, setShowCart] = useState(false);
+    const [cartItems, setCartItems] = useState(localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')):[]);
+    const [showCart, setShowCart] = useState(false);
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    });
 
        const handleSubmit = (product, event) => {
             event.preventDefault();            
